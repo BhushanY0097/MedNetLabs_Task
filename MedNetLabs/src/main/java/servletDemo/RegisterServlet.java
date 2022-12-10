@@ -49,6 +49,7 @@ public class RegisterServlet extends HttpServlet {
 			pstmt.setString(10, state);
 			pstmt.execute();
 			out.println("<h2>Record inserted successfully..</h2>");
+			//res.sendRedirect("/MedNetLabs/Login.jsp");
 			pstmt.close();
 		} catch (Exception e) {
 			e.printStackTrace();
